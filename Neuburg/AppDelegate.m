@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "Pg2ViewController.h"
+#import "Pg3ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    ViewController    *pageOneVC   = [[ViewController alloc] init];
+    Pg2ViewController *pageTwoVC   = [[Pg2ViewController alloc] init];
+    Pg3ViewController *pageThreeVC = [[Pg3ViewController alloc] init];
+    
+    UINavigationController *pageOneNC   = [[UINavigationController alloc] initWithRootViewController:pageOneVC];
+    UINavigationController *pageTwoNC   = [[UINavigationController alloc] initWithRootViewController:pageTwoVC];
+    UINavigationController *pageThreeNC = [[UINavigationController alloc] initWithRootViewController:pageThreeVC];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[pageOneNC, pageTwoNC, pageThreeNC]
+                                animated:YES];
+    
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:viewRect];    
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
