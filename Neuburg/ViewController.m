@@ -41,10 +41,15 @@
     [mainView addSubview:view4];
     [view4 addSubview:view5];
     
-    CGRect r = view5.bounds; // Inset views resize around their center.
-    r.size.height += 20;
-    r.size.width += 20;
-    view5.bounds = r;
+    CGRect r4 = view4.bounds; // Get superview's frame.
+    r4.origin.x += 25;        // Set superview's x-origin.
+    r4.origin.y += 25;        // Set superview's y-origin.
+    view4.bounds = r4;        // Change the superview's coordinate system.
+    
+    CGRect r5 = view5.bounds; // Get the subview's frame.
+    r5.size.height -= 10;     // Set inset view's height.
+    r5.size.width  -= 10;     // Set inset view's width.
+    view5.bounds = r5;        // Change the inset view's frame.
 }
 
 - (void)didReceiveMemoryWarning {
