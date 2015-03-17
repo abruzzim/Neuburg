@@ -41,6 +41,10 @@
     [mainView addSubview:view4];
     [view4 addSubview:view5];
     
+    CGRect r = view5.bounds; // Inset views resize around their center.
+    r.size.height += 20;
+    r.size.width += 20;
+    view5.bounds = r;
 }
 
 - (void)didReceiveMemoryWarning {
