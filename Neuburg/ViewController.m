@@ -29,9 +29,18 @@
     UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake(43, 197, 160, 230)];
     view3.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
     
+    UIView *view4 = [[UIView alloc] initWithFrame:CGRectMake(130, 250, 132, 194)];
+    view4.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0];
+    
+    UIView *view5 = [[UIView alloc] initWithFrame:CGRectInset(view4.bounds, 10, 10)]; // Refers to view4's bounds.
+    view5.backgroundColor = [UIColor colorWithRed:1.0 green:0.7 blue:0.1 alpha:0.9];
+    
     [mainView addSubview:view1];
     [view1 addSubview:view2];
     [mainView addSubview:view3];
+    [mainView addSubview:view4];
+    [view4 addSubview:view5];
+    
 }
 
 - (void)didReceiveMemoryWarning {
