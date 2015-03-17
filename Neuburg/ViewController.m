@@ -35,11 +35,19 @@
     UIView *view5 = [[UIView alloc] initWithFrame:CGRectInset(view4.bounds, 10, 10)]; // Refers to view4's bounds.
     view5.backgroundColor = [UIColor colorWithRed:1.0 green:0.7 blue:0.1 alpha:0.9];
     
+    UIView *view6 = [[UIView alloc] initWithFrame:CGRectMake(180, 300, 132, 194)];
+    view6.backgroundColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.2 alpha:1.0];
+    
+    UIView *view7 = [[UIView alloc] initWithFrame:CGRectInset(view6.bounds, 10, 10)]; // Refers to view6's bounds.
+    view7.backgroundColor = [UIColor colorWithRed:1.0 green:0.1 blue:1.0 alpha:0.9];
+    
     [mainView addSubview:view1];
     [view1 addSubview:view2];
     [mainView addSubview:view3];
     [mainView addSubview:view4];
     [view4 addSubview:view5];
+    [mainView addSubview:view6];
+    [view6 addSubview:view7];
     
     CGRect r4 = view4.bounds; // Get superview's frame.
     r4.origin.x += 25;        // Set superview's x-origin.
@@ -50,6 +58,8 @@
     r5.size.height -= 10;     // Set inset view's height.
     r5.size.width  -= 10;     // Set inset view's width.
     view5.bounds = r5;        // Change the inset view's frame.
+    
+    view6.transform = CGAffineTransformMakeRotation(45 * M_PI/180.0); // Rotation transform.
 }
 
 - (void)didReceiveMemoryWarning {
