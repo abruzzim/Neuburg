@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "Pg2ViewController.h"
 #import "Pg3ViewController.h"
+#import "Pg4ViewController.h"
+#import "Pg5ViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,13 +25,17 @@
     ViewController    *pageOneVC   = [[ViewController alloc] init];
     Pg2ViewController *pageTwoVC   = [[Pg2ViewController alloc] init];
     Pg3ViewController *pageThreeVC = [[Pg3ViewController alloc] init];
+    Pg4ViewController *pageFourVC  = [[Pg4ViewController alloc] init];
+    Pg5ViewController *pageFiveVC  = [[Pg5ViewController alloc] init];
     
     UINavigationController *pageOneNC   = [[UINavigationController alloc] initWithRootViewController:pageOneVC];
     UINavigationController *pageTwoNC   = [[UINavigationController alloc] initWithRootViewController:pageTwoVC];
     UINavigationController *pageThreeNC = [[UINavigationController alloc] initWithRootViewController:pageThreeVC];
+    UINavigationController *pageFourNC  = [[UINavigationController alloc] initWithRootViewController:pageFourVC];
+    UINavigationController *pageFiveNC  = [[UINavigationController alloc] initWithRootViewController:pageFiveVC];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[pageOneNC, pageTwoNC, pageThreeNC]
+    [tabBarController setViewControllers:@[pageThreeNC, pageTwoNC, pageOneNC, pageFourNC, pageFiveNC]
                                 animated:YES];
     
     CGRect viewRect = [[UIScreen mainScreen] bounds];

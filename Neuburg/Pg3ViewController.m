@@ -29,22 +29,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Autoresizing Demo Part 2/2
+    
+    UIView *page3MainView = self.view;
+    page3MainView.backgroundColor = [UIColor grayColor];
+    
+    // Subview set.
+    
+    UIView *v1 = [[UIView alloc] initWithFrame:page3MainView.bounds];
+    v1.backgroundColor = [UIColor colorWithRed:1.0 green:0.4 blue:1.0 alpha:1.0];
+    v1.autoresizingMask = UIViewAutoresizingFlexibleWidth |
+                          UIViewAutoresizingFlexibleHeight;
+    
+    UIView *v2 = [[UIView alloc] initWithFrame:CGRectMake(0, 64, v1.bounds.size.width, 10)];
+    v2.backgroundColor = [UIColor colorWithRed:0.5 green:1.0 blue:0.0 alpha:1.0];
+    v2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    
+    UIView *v3 = [[UIView alloc] initWithFrame:CGRectMake(v1.bounds.size.width-20, v1.bounds.size.height-20-50, 20, 20)];
+    v3.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
+    v3.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
+    
+    [page3MainView addSubview:v1];
+    [v1 addSubview:v2];
+    [v1 addSubview:v3];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
