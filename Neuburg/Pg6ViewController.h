@@ -12,5 +12,7 @@
 
 @property (strong, nonatomic) UILabel *label1;
 @property (strong, nonatomic) UILabel *label2;
+@property (strong, nonatomic) UILabel *label3;
+@property (strong, nonatomic) UIButton *button1;
 
 @end
