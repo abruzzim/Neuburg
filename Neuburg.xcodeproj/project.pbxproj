@@ -18,6 +18,7 @@
 		AFE3C8D51AB87A2800BB864C /* Pg3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8D41AB87A2800BB864C /* Pg3ViewController.m */; };
 		AFE3C8D81AB8952B00BB864C /* Pg4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8D71AB8952B00BB864C /* Pg4ViewController.m */; };
 		AFE3C8DB1AB8954700BB864C /* Pg5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8DA1AB8954700BB864C /* Pg5ViewController.m */; };
+		AFE3C8DE1AB8B22800BB864C /* Pg6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8DD1AB8B22800BB864C /* Pg6ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		AFE3C8D71AB8952B00BB864C /* Pg4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg4ViewController.m; sourceTree = "<group>"; };
 		AFE3C8D91AB8954700BB864C /* Pg5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg5ViewController.h; sourceTree = "<group>"; };
 		AFE3C8DA1AB8954700BB864C /* Pg5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg5ViewController.m; sourceTree = "<group>"; };
+		AFE3C8DC1AB8B22800BB864C /* Pg6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg6ViewController.h; sourceTree = "<group>"; };
+		AFE3C8DD1AB8B22800BB864C /* Pg6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg6ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				AFE3C8D71AB8952B00BB864C /* Pg4ViewController.m */,
 				AFE3C8D91AB8954700BB864C /* Pg5ViewController.h */,
 				AFE3C8DA1AB8954700BB864C /* Pg5ViewController.m */,
+				AFE3C8DC1AB8B22800BB864C /* Pg6ViewController.h */,
+				AFE3C8DD1AB8B22800BB864C /* Pg6ViewController.m */,
 				AF2A334B1AB7B3DF00442A53 /* Main.storyboard */,
 				AF2A334E1AB7B3DF00442A53 /* Images.xcassets */,
 				AF2A33501AB7B3DF00442A53 /* LaunchScreen.xib */,
@@ -241,6 +246,7 @@
 			files = (
 				AFE3C8D51AB87A2800BB864C /* Pg3ViewController.m in Sources */,
 				AF2A334A1AB7B3DF00442A53 /* ViewController.m in Sources */,
+				AFE3C8DE1AB8B22800BB864C /* Pg6ViewController.m in Sources */,
 				AFE3C8D81AB8952B00BB864C /* Pg4ViewController.m in Sources */,
 				AF2A33471AB7B3DF00442A53 /* AppDelegate.m in Sources */,
 				AFE3C8D21AB8788A00BB864C /* Pg2ViewController.m in Sources */,

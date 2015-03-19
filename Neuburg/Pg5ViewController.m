@@ -21,6 +21,7 @@
     if (self) {
         // Custom initialization.
         self.title = @"Pg 5";
+        self.tabBarItem.image = [UIImage imageNamed:@"man343"];
     }
     
     return self;
@@ -33,27 +34,61 @@
     UIView *page5MainView = self.view;
     page5MainView.backgroundColor = [UIColor grayColor];
     
-    /* Add UIButton */
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(100, 111, 132, 194)];
+    v1.backgroundColor = [UIColor colorWithRed:1.0 green:0.4 blue:1.0 alpha:1.0];
     
-    UIButton *resizeToggle = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    resizeToggle.layer.cornerRadius = 5.0;
-    resizeToggle.frame = CGRectMake((page5MainView.bounds.size.width/2)-(100/2), page5MainView.bounds.size.height-150, 100, 50);
-    resizeToggle.backgroundColor = [UIColor yellowColor];
-    [resizeToggle setTitle:@"No Op" forState:UIControlStateNormal];
-    [page5MainView addSubview:resizeToggle];
-    [resizeToggle addTarget:self
-                     action:@selector(resize:)
-           forControlEvents:UIControlEventTouchUpInside];
+    UIView *v2 = [UIView new]; // Frame NOT set.
+    v2.backgroundColor = [UIColor colorWithRed:0.5 green:1.0 blue:0.0 alpha:1.0];
+    
+    UIView *v3 = [UIView new]; // Frame NOT set.
+    v3.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
+    
+    [page5MainView addSubview: v1];
+    [v1 addSubview: v2];
+    [v1 addSubview: v3];
+    
+    v2.translatesAutoresizingMaskIntoConstraints = NO;
+    v3.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    // https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage/VisualFormatLanguage.html#//apple_ref/doc/uid/TP40010853-CH3-SW1
+    
+    // Create a dictionary wherein the keys are string representations of the corresponding values’ variable names.
+    
+    NSDictionary *subViews = NSDictionaryOfVariableBindings(v2,v3);
+    
+    // v2 is 10 pts high and flush with the left, right and top of v1.
+    
+    [v1 addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[v2]|"
+                                             options:0
+                                             metrics:nil
+                                               views:subViews]];
+    
+    [v1 addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[v2(10)]"
+                                             options:0
+                                             metrics:nil
+                                               views:subViews]];
+    
+    // v3 is 20 pts wide and 20 pts high and flush with the bottom-right corner of v1.
+    
+    [v1 addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[v3(20)]|"
+                                             options:0
+                                             metrics:nil
+                                               views:subViews]];
+    
+    [v1 addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[v3(20)]|"
+                                             options:0
+                                             metrics:nil
+                                               views:subViews]];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)resize:(UIButton *)sender {
-    NSLog(@"Resize button tapped");
-    
 }
 
 @end

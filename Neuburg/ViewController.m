@@ -21,6 +21,7 @@
     if (self) {
         // Custom initialization.
         self.title = @"Pg 1";
+        self.tabBarItem.image = [UIImage imageNamed:@"man343"];
     }
     
     return self;
