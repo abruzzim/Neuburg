@@ -14,6 +14,7 @@
 #import "Pg5ViewController.h"
 #import "Pg6ViewController.h"
 #import "Pg7ViewController.h"
+#import "Pg8ViewController.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,7 @@
     Pg5ViewController *pageFiveVC  = [[Pg5ViewController alloc] init];
     Pg6ViewController *pageSixVC   = [[Pg6ViewController alloc] init];
     Pg7ViewController *pageSevenVC = [[Pg7ViewController alloc] init];
+    Pg8ViewController *pageEightVC = [[Pg8ViewController alloc] init];
     
     UINavigationController *pageOneNC   = [[UINavigationController alloc] initWithRootViewController:pageOneVC];
     UINavigationController *pageTwoNC   = [[UINavigationController alloc] initWithRootViewController:pageTwoVC];
@@ -39,9 +41,10 @@
     UINavigationController *pageFiveNC  = [[UINavigationController alloc] initWithRootViewController:pageFiveVC];
     UINavigationController *pageSixNC   = [[UINavigationController alloc] initWithRootViewController:pageSixVC];
     UINavigationController *pageSevenNC = [[UINavigationController alloc] initWithRootViewController:pageSevenVC];
+    UINavigationController *pageEightNC = [[UINavigationController alloc] initWithRootViewController:pageEightVC];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[pageSevenNC, pageOneNC, pageTwoNC, pageThreeNC, pageFourNC, pageFiveNC, pageSixNC]
+    [tabBarController setViewControllers:@[pageEightNC, pageOneNC, pageTwoNC, pageThreeNC, pageFourNC, pageFiveNC, pageSixNC, pageSevenNC]
                                 animated:YES];
     
     CGRect viewRect = [[UIScreen mainScreen] bounds];

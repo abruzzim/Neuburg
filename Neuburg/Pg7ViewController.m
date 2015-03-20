@@ -71,12 +71,12 @@
     [self.marsImgView.superview addConstraint:
      [NSLayoutConstraint
       constraintWithItem:self.marsImgView
-      attribute:NSLayoutAttributeCenterY
-      relatedBy:0
-      toItem:self.marsImgView.superview
-      attribute:NSLayoutAttributeCenterY
-      multiplier:1
-      constant:0]];
+               attribute:NSLayoutAttributeCenterY
+               relatedBy:0
+                  toItem:self.marsImgView.superview
+               attribute:NSLayoutAttributeCenterY
+              multiplier:1
+                constant:0]];
     
     self.marsImgView.image = [UIImage imageNamed:@"Mars.png"];
     

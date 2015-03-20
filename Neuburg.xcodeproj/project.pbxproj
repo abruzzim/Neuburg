@@ -15,6 +15,7 @@
 		AF2A33521AB7B3DF00442A53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2A33501AB7B3DF00442A53 /* LaunchScreen.xib */; };
 		AF2A335E1AB7B3DF00442A53 /* NeuburgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2A335D1AB7B3DF00442A53 /* NeuburgTests.m */; };
 		AF8209121ABB6806003A222C /* Pg7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8209111ABB6806003A222C /* Pg7ViewController.m */; };
+		AF8209151ABB9709003A222C /* Pg8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8209141ABB9709003A222C /* Pg8ViewController.m */; };
 		AFE3C8D21AB8788A00BB864C /* Pg2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8D11AB8788A00BB864C /* Pg2ViewController.m */; };
 		AFE3C8D51AB87A2800BB864C /* Pg3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8D41AB87A2800BB864C /* Pg3ViewController.m */; };
 		AFE3C8D81AB8952B00BB864C /* Pg4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C8D71AB8952B00BB864C /* Pg4ViewController.m */; };
@@ -48,6 +49,8 @@
 		AF2A335D1AB7B3DF00442A53 /* NeuburgTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeuburgTests.m; sourceTree = "<group>"; };
 		AF8209101ABB6806003A222C /* Pg7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg7ViewController.h; sourceTree = "<group>"; };
 		AF8209111ABB6806003A222C /* Pg7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg7ViewController.m; sourceTree = "<group>"; };
+		AF8209131ABB9709003A222C /* Pg8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg8ViewController.h; sourceTree = "<group>"; };
+		AF8209141ABB9709003A222C /* Pg8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg8ViewController.m; sourceTree = "<group>"; };
 		AFE3C8D01AB8788A00BB864C /* Pg2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg2ViewController.h; sourceTree = "<group>"; };
 		AFE3C8D11AB8788A00BB864C /* Pg2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pg2ViewController.m; sourceTree = "<group>"; };
 		AFE3C8D31AB87A2800BB864C /* Pg3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pg3ViewController.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				AFE3C8DD1AB8B22800BB864C /* Pg6ViewController.m */,
 				AF8209101ABB6806003A222C /* Pg7ViewController.h */,
 				AF8209111ABB6806003A222C /* Pg7ViewController.m */,
+				AF8209131ABB9709003A222C /* Pg8ViewController.h */,
+				AF8209141ABB9709003A222C /* Pg8ViewController.m */,
 				AF2A334B1AB7B3DF00442A53 /* Main.storyboard */,
 				AF2A334E1AB7B3DF00442A53 /* Images.xcassets */,
 				AF2A33501AB7B3DF00442A53 /* LaunchScreen.xib */,
@@ -255,6 +260,7 @@
 				AFE3C8DE1AB8B22800BB864C /* Pg6ViewController.m in Sources */,
 				AFE3C8D81AB8952B00BB864C /* Pg4ViewController.m in Sources */,
 				AF2A33471AB7B3DF00442A53 /* AppDelegate.m in Sources */,
+				AF8209151ABB9709003A222C /* Pg8ViewController.m in Sources */,
 				AFE3C8D21AB8788A00BB864C /* Pg2ViewController.m in Sources */,
 				AF2A33441AB7B3DF00442A53 /* main.m in Sources */,
 				AFE3C8DB1AB8954700BB864C /* Pg5ViewController.m in Sources */,
